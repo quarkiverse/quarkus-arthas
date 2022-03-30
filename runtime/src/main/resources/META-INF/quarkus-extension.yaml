@@ -1,0 +1,9 @@
+name: Arthas
+description: "Connect Arthas to a Quarkus application when it starts in dev mode"
+metadata:
+  keywords:
+    - arthas
+    - diagnostics
+  categories:
+    - "miscellaneous"
+  status: "preview"

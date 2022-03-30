@@ -1,0 +1,5 @@
+name: quarkus-arthas
+title: Quarkus - Arthas
+version: dev
+nav:
+  - modules/ROOT/nav.adoc
