@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This Quarkus extension integrates [Arthas](https://github.com/alibaba/arthas) Quarkus Dev Mode thus allowing users to deeply
+This Quarkus extension integrates [Arthas](https://github.com/alibaba/arthas) into Quarkus Dev Mode thus allowing users to deeply
 probe their application using Arthas.
 
 ---
