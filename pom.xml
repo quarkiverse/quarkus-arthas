@@ -16,7 +16,7 @@
     <module>runtime</module>
   </modules>
   <scm>
-    <connection>:git:git@github.com:quarkiverse/quarkus-arthas.git</connection>
+    <connection>scm:git:git@github.com:quarkiverse/quarkus-arthas.git</connection>
     <developerConnection>scm:git:git@github.com:quarkiverse/quarkus-arthas.git</developerConnection>
     <url>https://github.com/quarkiverse/quarkus-arthas</url>
   </scm>
