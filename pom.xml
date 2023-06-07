@@ -19,6 +19,7 @@
     <connection>scm:git:git@github.com:quarkiverse/quarkus-arthas.git</connection>
     <developerConnection>scm:git:git@github.com:quarkiverse/quarkus-arthas.git</developerConnection>
     <url>https://github.com/quarkiverse/quarkus-arthas</url>
+    <tag>HEAD</tag>
   </scm>
   <properties>
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
