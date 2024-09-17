@@ -21,11 +21,7 @@
     <url>https://github.com/quarkiverse/quarkus-arthas</url>
   </scm>
   <properties>
-    <compiler-plugin.version>3.8.1</compiler-plugin.version>
-    <maven.compiler.release>11</maven.compiler.release>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <quarkus.version>2.16.6.Final</quarkus.version>
+    <quarkus.version>3.14.4</quarkus.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -45,15 +41,6 @@
           <groupId>io.quarkus</groupId>
           <artifactId>quarkus-maven-plugin</artifactId>
           <version>${quarkus.version}</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>${compiler-plugin.version}</version>
-          <configuration>
-            <compilerArgs>
-              <arg>-parameters</arg>
-            </compilerArgs>
-          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
