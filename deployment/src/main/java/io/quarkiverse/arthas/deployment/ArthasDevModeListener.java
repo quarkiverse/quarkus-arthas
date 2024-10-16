@@ -117,7 +117,7 @@ public class ArthasDevModeListener implements DevModeListener {
                 "" + httpPort,
                 "--target-ip",
                 "localhost")
-                        .directory(arthasJar.getParent().toFile());
+                .directory(arthasJar.getParent().toFile());
 
         if (log.isDebugEnabled()) {
             processBuilder.inheritIO();
