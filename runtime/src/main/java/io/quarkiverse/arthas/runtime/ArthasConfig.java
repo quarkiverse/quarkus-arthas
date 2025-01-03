@@ -1,38 +1,40 @@
 package io.quarkiverse.arthas.runtime;
 
-import io.quarkus.runtime.annotations.ConfigItem;
 import io.quarkus.runtime.annotations.ConfigPhase;
 import io.quarkus.runtime.annotations.ConfigRoot;
+import io.smallrye.config.ConfigMapping;
+import io.smallrye.config.WithDefault;
 
 /**
- * Configuration related to <a href="https://arthas.aliyun.com">Arthas</a>.
- *
+ * Configuration related to <a href="https://arthas.aliyun.com/en">Arthas</a>.
+ * <p>
  * These configuration values only apply to dev-mode.
  */
 @ConfigRoot(phase = ConfigPhase.RUN_TIME)
-public class ArthasConfig {
+@ConfigMapping(prefix = "quarkus.arthas")
+public interface ArthasConfig {
 
     /**
      * Whether Arthas should be started when Quarkus dev-mode is launched
      */
-    @ConfigItem(defaultValue = "false")
-    public boolean enabled;
+    @WithDefault("false")
+    boolean enabled();
 
     /**
      * The versions of Arthas to use
      */
-    @ConfigItem(defaultValue = "3.6.1")
-    public String version;
+    @WithDefault("4.0.4")
+    String version();
 
     /**
      * The directory into which to save the arthas-boot jar if it doesn't exist
      */
-    @ConfigItem(defaultValue = "${user.home}/.quarkus/arthas")
-    public String jarDirectory;
+    @WithDefault("${user.home}/.quarkus/arthas")
+    String jarDirectory();
 
     /**
      * The port on which the Arthas Web Console will be available
      */
-    @ConfigItem(defaultValue = "8563")
-    public Integer httpPort;
+    @WithDefault("8563")
+    Integer httpPort();
 }
