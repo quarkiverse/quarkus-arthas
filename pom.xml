@@ -8,7 +8,7 @@
   </parent>
   <groupId>io.quarkiverse.arthas</groupId>
   <artifactId>quarkus-arthas-parent</artifactId>
-  <version>0.2-SNAPSHOT</version>
+  <version>0.2.0</version>
   <packaging>pom</packaging>
   <name>Quarkus - Arthas - Parent</name>
   <modules>
@@ -19,6 +19,7 @@
     <connection>scm:git:git@github.com:quarkiverse/quarkus-arthas.git</connection>
     <developerConnection>scm:git:git@github.com:quarkiverse/quarkus-arthas.git</developerConnection>
     <url>https://github.com/quarkiverse/quarkus-arthas</url>
+    <tag>0.2.0</tag>
   </scm>
   <properties>
     <compiler-plugin.version>3.8.1</compiler-plugin.version>

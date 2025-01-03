@@ -4,7 +4,7 @@
   <parent>
     <groupId>io.quarkiverse.arthas</groupId>
     <artifactId>quarkus-arthas-parent</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.2.0</version>
   </parent>
   <artifactId>quarkus-arthas</artifactId>
   <name>Quarkus - Arthas - Runtime</name>
