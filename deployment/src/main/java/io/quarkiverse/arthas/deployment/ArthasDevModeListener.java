@@ -13,7 +13,7 @@ import org.jboss.logging.Logger;
 
 import io.quarkus.bootstrap.app.RunningQuarkusApplication;
 import io.quarkus.deployment.dev.DevModeListener;
-import io.quarkus.utilities.JavaBinFinder;
+import io.smallrye.common.process.ProcessUtil;
 
 public class ArthasDevModeListener implements DevModeListener {
 
@@ -110,7 +110,7 @@ public class ArthasDevModeListener implements DevModeListener {
 
     private void startArthas(Path arthasJar, Integer httpPort) {
         log.debug("Attempting to start Arthas");
-        ProcessBuilder processBuilder = new ProcessBuilder(JavaBinFinder.findBin(),
+        ProcessBuilder processBuilder = new ProcessBuilder(ProcessUtil.pathOfJava().toString(),
                 "-jar", arthasJar.toAbsolutePath().toString(),
                 "" + ProcessHandle.current().pid(),
                 "--http-port",
